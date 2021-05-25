@@ -1,0 +1,36 @@
+public class Employee {
+	private String name,address;
+	private int year,salary;
+	public Employee(String n, int y, int sal, String add) {
+		name = n;
+		year = y;
+		salary = sal;
+		address = add;
+	}
+	public String getname() {
+		return name;
+	}
+	public int getyear() {
+		return year;
+	}
+	public String getaddress() {
+		return address;
+  }
+	public int getsalary() {
+		return salary;
+	}
+}
+class Emp{
+	public static void main(String[] args) {
+	Employee e1 = new Employee("Robert",1996,500000,"64c-wallsstreest");
+	Employee e2 = new Employee("sam",2000,740000,"68d-wallsstreest");
+	Employee e3 = new Employee("john",1998,600000,"26B-wallsstreest");
+	
+	System.out.println("name\tyear of joing\tslary\taddress");
+	System.out.println(e1.getname()+"\t"+e1.getyear()+" \t\t\t"+e1.getsalary()+"\t" e1.getAddress());
+	System.out.println(e2.getname()+"\t"+e2.getyear()+" \t\t\t"+e2.getsalary()+"\t" e2.getAddress());
+	System.out.println(e3.getname()+"\t"+e3.getyear()+" \t\t\t"+e3.getsalary()+"\t" e3. getAddress());
+	
+
+	}
+}
